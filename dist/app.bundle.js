@@ -86,6 +86,30 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./assets/img/food-table.jpg":
+/*!***********************************!*\
+  !*** ./assets/img/food-table.jpg ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"assets/img/food-table.jpg\");\n\n//# sourceURL=webpack:///./assets/img/food-table.jpg?");
+
+/***/ }),
+
+/***/ "./assets/img/grill.jpg":
+/*!******************************!*\
+  !*** ./assets/img/grill.jpg ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"assets/img/grill.jpg\");\n\n//# sourceURL=webpack:///./assets/img/grill.jpg?");
+
+/***/ }),
+
 /***/ "./assets/js/script.js":
 /*!*****************************!*\
   !*** ./assets/js/script.js ***!
@@ -93,7 +117,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\r\n\r\n$(document).ready(function () {\r\n\t// First image is hard coded in index.html\r\n\tconst carouselSlides = [\r\n\t\t{\r\n\t\t\ttitle: 'We travel all over the US',\r\n\t\t\tsubtitle: 'Check out our schedule!',\r\n\t\t\timg: './assets/img/food-table.jpg',\r\n\t\t\tbtnText: 'View Schedule',\r\n\t\t\tbtnUrl: 'schedule.html',\r\n\t\t},\r\n\t\t{\r\n\t\t\ttitle: 'Our food is seriously the bomb!',\r\n\t\t\tsubtitle: 'What are you waiting for?',\r\n\t\t\timg: './assets/img/grill.jpg',\r\n\t\t\tbtnText: 'Purchase Tickets',\r\n\t\t\tbtnUrl: 'tickets.html',\r\n\t\t},\r\n\t];\r\n\r\n\tcarouselSlides.forEach((slide, i) => {\r\n\t\t$('.carousel-inner').append(`\r\n  <div class=\"carousel-item fullscreen-carousel\" style=\"background-image: url('${slide.img}')\">\r\n    <div class=\"d-flex h-100 align-items-center justify-content-center carousel-caption\">\r\n        <div class=\"container\">\r\n          <div class=\"row align-items-center justify-content-center\">\r\n              <h2 class=\"display-4 mb-2\">${slide.title}</h2>\r\n          </div>\r\n          <div class=\"row align-items-center justify-content-center\">\r\n            <h3>${slide.subtitle}</h3>\r\n          </div>\r\n          <div class=\" mt-4 row align-items-center justify-content-center\">\r\n            <a class=\"btn btn-primary\" href=\"${slide.btnUrl}\">\r\n                ${slide.btnText}\r\n            </a>\r\n          </div>\r\n        </div>\r\n    </div>\r\n  </div>`);\r\n\t});\r\n});\r\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./assets/js/script.js?");
+eval("/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\r\nconst img1 = __webpack_require__(/*! ../../assets/img/food-table.jpg */ \"./assets/img/food-table.jpg\");\r\nconst img2 = __webpack_require__(/*! ../../assets/img/grill.jpg */ \"./assets/img/grill.jpg\");\r\n\r\n$(document).ready(function () {\r\n\t// First image is hard coded in index.html\r\n\tconst carouselSlides = [\r\n\t\t{\r\n\t\t\ttitle: 'We travel all over the US',\r\n\t\t\tsubtitle: 'Check out our schedule!',\r\n\t\t\timg: img1,\r\n\t\t\tbtnText: 'View Schedule',\r\n\t\t\tbtnUrl: 'schedule.html',\r\n\t\t},\r\n\t\t{\r\n\t\t\ttitle: 'Our food is seriously the bomb!',\r\n\t\t\tsubtitle: 'What are you waiting for?',\r\n\t\t\timg: img2,\r\n\t\t\tbtnText: 'Purchase Tickets',\r\n\t\t\tbtnUrl: 'tickets.html',\r\n\t\t},\r\n\t];\r\n\r\n\tcarouselSlides.forEach((slide, i) => {\r\n\t\t$('.carousel-inner').append(`\r\n  <div class=\"carousel-item fullscreen-carousel\" style=\"background-image: url('${slide.img}')\">\r\n    <div class=\"d-flex h-100 align-items-center justify-content-center carousel-caption\">\r\n        <div class=\"container\">\r\n          <div class=\"row align-items-center justify-content-center\">\r\n              <h2 class=\"display-4 mb-2\">${slide.title}</h2>\r\n          </div>\r\n          <div class=\"row align-items-center justify-content-center\">\r\n            <h3>${slide.subtitle}</h3>\r\n          </div>\r\n          <div class=\" mt-4 row align-items-center justify-content-center\">\r\n            <a class=\"btn btn-primary\" href=\"${slide.btnUrl}\">\r\n                ${slide.btnText}\r\n            </a>\r\n          </div>\r\n        </div>\r\n    </div>\r\n  </div>`);\r\n\t});\r\n});\r\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./assets/js/script.js?");
 
 /***/ }),
 

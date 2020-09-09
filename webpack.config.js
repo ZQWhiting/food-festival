@@ -1,4 +1,3 @@
-const path = require('path');
 const webpack = require('webpack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 	.BundleAnalyzerPlugin;
@@ -13,6 +12,29 @@ module.exports = {
 	output: {
 		filename: '[name].bundle.js',
 		path: __dirname + '/dist',
+	},
+	module: {
+		rules: [
+			{
+				test: /\.jpg$/i,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name(file) {
+								return '[path][name].[ext]';
+							},
+							publicPath: function (url) {
+								return url.replace('../', '/assets/');
+							},
+						},
+					},
+					{
+						loader: 'image-webpack-loader',
+					},
+				],
+			},
+		],
 	},
 	plugins: [
 		new webpack.ProvidePlugin({
